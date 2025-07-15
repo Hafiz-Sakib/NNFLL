@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.24)  15 JUL 2025 22:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.24)  15 JUL 2025 22:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -189,8 +189,31 @@ LaTeX Font Info:    ... okay on input line 11.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 23.
+(C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 23.
+ (C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 23.
+ (C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 23.
 
-Overfull \hbox (26.90201pt too wide) in alignment at lines 20--47
+Overfull \hbox (92.41179pt too wide) in paragraph at lines 23--27
+[][] 
+ []
+
+
+Overfull \hbox (26.90201pt too wide) in alignment at lines 33--57
  [] [] [] [] 
  []
 
@@ -205,15 +228,15 @@ L3 programming layer <2024-05-27>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1380 strings out of 473920
- 24490 string characters out of 5726974
- 1940908 words of memory out of 5000000
- 24270 multiletter control sequences out of 15000+600000
- 570170 words of font info for 41 fonts, out of 8000000 for 9000
+ 1435 strings out of 473920
+ 25747 string characters out of 5726974
+ 1939908 words of memory out of 5000000
+ 24307 multiletter control sequences out of 15000+600000
+ 578247 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,5n,65p,268b,169s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,65p,268b,210s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
-Output written on index.pdf (1 page, 53619 bytes).
+Output written on index.pdf (1 page, 54840 bytes).
 PDF statistics:
  17 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -12,84 +12,132 @@ Original file is located at
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Sigmoid and its derivative
+# Sigmoid activation and its derivative
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
+
 def sigmoid_derivative(x):
     return x * (1 - x)
 
-# XNOR inputs and expected outputs
-X = np.array([[0,0],[0,1],[1,0],[1,1]])
-y = np.array([[1],[0],[0],[1]])
+# XNOR truth table
+X = np.array([[0, 0],
+              [0, 1],
+              [1, 0],
+              [1, 1]])
 
-# Random weight initialization
+y = np.array([[1],
+              [0],
+              [0],
+              [1]])
+
+# Initialize weights and biases
 np.random.seed(42)
 input_size = 2
 hidden_size = 2
 output_size = 1
 
-wh = np.random.uniform(size=(input_size, hidden_size))
-bh = np.random.uniform(size=(1, hidden_size))
-wo = np.random.uniform(size=(hidden_size, output_size))
-bo = np.random.uniform(size=(1, output_size))
+# Weights and biases
+W1 = np.random.uniform(size=(input_size, hidden_size))
+b1 = np.random.uniform(size=(1, hidden_size))
+W2 = np.random.uniform(size=(hidden_size, output_size))
+b2 = np.random.uniform(size=(1, output_size))
 
-# Train the model
-lr = 0.1
-for epoch in range(10000):
-    # Forward pass
-    hidden_input = np.dot(X, wh) + bh
-    hidden_output = sigmoid(hidden_input)
+# Training parameters
+learning_rate = 0.1
+epochs = 10000
 
-    final_input = np.dot(hidden_output, wo) + bo
-    output = sigmoid(final_input)
+# Training the MLP
+for epoch in range(epochs):
+    # Forward propagation
+    hidden_layer_input = np.dot(X, W1) + b1
+    hidden_layer_output = sigmoid(hidden_layer_input)
 
-    # Backward pass
-    error = y - output
-    d_output = error * sigmoid_derivative(output)
+    output_layer_input = np.dot(hidden_layer_output, W2) + b2
+    predicted_output = sigmoid(output_layer_input)
 
-    error_hidden = d_output.dot(wo.T)
-    d_hidden = error_hidden * sigmoid_derivative(hidden_output)
+    # Backpropagation
+    error = y - predicted_output
+    d_predicted_output = error * sigmoid_derivative(predicted_output)
+
+    error_hidden_layer = d_predicted_output.dot(W2.T)
+    d_hidden_layer = error_hidden_layer * sigmoid_derivative(hidden_layer_output)
 
     # Update weights and biases
-    wo += hidden_output.T.dot(d_output) * lr
-    bo += np.sum(d_output, axis=0, keepdims=True) * lr
-    wh += X.T.dot(d_hidden) * lr
-    bh += np.sum(d_hidden, axis=0, keepdims=True) * lr
+    W2 += hidden_layer_output.T.dot(d_predicted_output) * learning_rate
+    b2 += np.sum(d_predicted_output, axis=0, keepdims=True) * learning_rate
+    W1 += X.T.dot(d_hidden_layer) * learning_rate
+    b1 += np.sum(d_hidden_layer, axis=0, keepdims=True) * learning_rate
+
+    # Print progress every 1000 epochs
+    if epoch % 1000 == 0:
+        print(f"\nEpoch {epoch}")
+        print("Updated Weights (W1):")
+        print(W1)
+        print("Updated Biases (b1):")
+        print(b1)
+        print("Updated Weights (W2):")
+        print(W2)
+        print("Updated Biases (b2):")
+        print(b2)
+        print("Actual Output:")
+        print(y.T)
+        print("Predicted Output:")
+        print(predicted_output.T)
 
 # Final predictions
-print("\n📌 Predicted XNOR Outputs (after training):\n")
-print(f"{'Input 1':^10} {'Input 2':^10} {'Predicted Output':^20}")
+hidden_layer_input = np.dot(X, W1) + b1
+hidden_layer_output = sigmoid(hidden_layer_input)
+output_layer_input = np.dot(hidden_layer_output, W2) + b2
+predicted_output = sigmoid(output_layer_input)
+
+print("\n📌 Final Results:")
+print(f"{'Input 1':^10} {'Input 2':^10} {'Actual':^10} {'Predicted':^10}")
 print("-" * 40)
 for i in range(len(X)):
-    print(f"{X[i][0]:^10} {X[i][1]:^10} {output[i][0]:^20.3f}")
+    print(f"{X[i][0]:^10} {X[i][1]:^10} {y[i][0]:^10} {predicted_output[i][0]:^10.4f}")
 
+# Decision Boundary Visualization with clean style
+def plot_decision_boundary(X, y, W1, b1, W2, b2):
+    # Create mesh grid
+    xx, yy = np.meshgrid(np.linspace(-0.5, 1.5, 300),
+                         np.linspace(-0.5, 1.5, 300))
+    grid = np.c_[xx.ravel(), yy.ravel()]
 
-# Plot The Straight Lines
-# Meshgrid for plotting
-xx, yy = np.meshgrid(np.linspace(-0.5, 1.5, 300),
-                     np.linspace(-0.5, 1.5, 300))
-grid = np.c_[xx.ravel(), yy.ravel()]
+    # Forward pass on mesh
+    hidden_layer = sigmoid(np.dot(grid, W1) + b1)
+    preds = sigmoid(np.dot(hidden_layer, W2) + b2)
+    preds = preds.reshape(xx.shape)
 
-# Forward pass on mesh
-hidden_layer = sigmoid(np.dot(grid, wh) + bh)
-preds = sigmoid(np.dot(hidden_layer, wo) + bo)
-preds = preds.reshape(xx.shape)
+    # Plot settings
+    plt.figure(figsize=(6, 6))
 
-# Plot
-plt.figure(figsize=(6,6))
+    # Decision boundary at 0.5 level
+    plt.contour(xx, yy, preds, levels=[0.5], colors='black', linewidths=2)
 
-# Only draw decision boundary (0.5 level), no labels
-plt.contour(xx, yy, preds, levels=[0.5], colors='black', linewidths=2)
+    # Plot input points with white fill and black edges
+    plt.scatter(X[:, 0], X[:, 1], c=y.ravel(), cmap='gray',
+                edgecolors='black', s=150, linewidths=1.5)
 
-# Plot XNOR input points
-plt.scatter(X[:, 0], X[:, 1], c='white', edgecolors='black', s=150, linewidths=1.5, marker='o')
+    # Add the two decision boundary lines
+    x_vals = np.linspace(-0.5, 1.5, 100)
 
-# Plot settings
-plt.title("XNOR Decision Boundary", fontsize=14)
-plt.xlabel("Input 1", fontsize=12)
-plt.ylabel("Input 2", fontsize=12)
-plt.xlim(-0.5, 1.5)
-plt.ylim(-0.5, 1.5)
-plt.grid(True)
-plt.tight_layout()
-plt.show()
+    # Line 1: First hidden neuron's decision boundary
+    y1 = (-W1[0, 0] * x_vals - b1[0, 0]) / W1[1, 0]
+    plt.plot(x_vals, y1, 'r--', linewidth=1.5, alpha=0.7, label='Hidden Neuron 1')
+
+    # Line 2: Second hidden neuron's decision boundary
+    y2 = (-W1[0, 1] * x_vals - b1[0, 1]) / W1[1, 1]
+    plt.plot(x_vals, y2, 'b--', linewidth=1.5, alpha=0.7, label='Hidden Neuron 2')
+
+    # Plot settings
+    plt.title("XNOR Decision Boundary", fontsize=14)
+    plt.xlabel("Input 1", fontsize=12)
+    plt.ylabel("Input 2", fontsize=12)
+    plt.xlim(-0.5, 1.5)
+    plt.ylim(-0.5, 1.5)
+    plt.grid(True)
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
+
+plot_decision_boundary(X, y, W1, b1, W2, b2)

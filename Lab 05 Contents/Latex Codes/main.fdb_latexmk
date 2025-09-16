@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1758056059.50522 "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" "main.pdf" "main" 1758056061.31576 0
+["pdflatex"] 1758056105.87993 "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" "main.pdf" "main" 1758056108.10117 0
   "C:/Users/SAKIB/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757473887 570884 c875e9d021f4cbcb765de3d17c34f594 ""
   "C:/Users/SAKIB/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tctt1200.pk" 1758053873 11368 151b39c9c34a104fd08d4f944471f8d5 ""
   "C:/Users/SAKIB/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1719207405 24264027 a7f34fefe87fe86baee30336a400e02b ""
@@ -112,10 +112,10 @@
   "assets/class_images/class_4.jpg" 1709868398 127827 6753748cad15cdc7a62a8e91b6913d1b ""
   "assets/diabetes/adam_diabetes_loss.png" 1758003168 66022 8011a3a662d93bc611f4d05ac70e086d ""
   "assets/diabetes/sgd_diabetes_loss.png" 1758003154 70746 942c537549aae38b8b825ab0b2606e89 ""
-  "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" 1758056056 13376 56e30dc8c3f81b7599c275f97dca4924 ""
-  "main.aux" 1758056061 1488 f8f65980cdaa2f9df17aef7c3f5390cd "pdflatex"
-  "main.out" 1758056060 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1758056056 13376 56e30dc8c3f81b7599c275f97dca4924 ""
+  "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" 1758056104 13096 609e383464521fd4bc967d127ed4222e ""
+  "main.aux" 1758056107 1488 f8f65980cdaa2f9df17aef7c3f5390cd "pdflatex"
+  "main.out" 1758056107 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1758056104 13096 609e383464521fd4bc967d127ed4222e ""
   (generated)
   "main.aux"
   "main.log"

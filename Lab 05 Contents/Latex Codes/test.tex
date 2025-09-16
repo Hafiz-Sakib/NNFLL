@@ -37,21 +37,9 @@
 \usepackage[T1]{fontenc} % Better font encoding
 \usepackage[utf8]{inputenc} % UTF-8 encoding for special characters
 \usepackage{microtype} % Improved typography
+\usepackage{verbatim} % For verbatim text environments
 
-% Listings package for pseudocode / code blocks
-\usepackage{listings}
-\lstset{
-    basicstyle=\ttfamily\small,
-    breaklines=true,        % Automatic line breaking
-    breakatwhitespace=true,
-    frame=single,           % Frame around code
-    backgroundcolor=\color{gray!10},
-    tabsize=4,
-    columns=fullflexible,
-    keepspaces=true,
-    showstringspaces=false
-}
-
+% Configuring hyperref for professional look
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -91,7 +79,7 @@ A regularized model was implemented using TensorFlow/Keras in Google Colab, trai
 The regularized model uses dropout (20\% rate) and batch normalization to enhance generalization and training stability.
 
 \textbf{Pseudocode:}
-\begin{lstlisting}
+\begin{verbatim}
 # Preprocess data
 Load dataset
 Replace zeros with mean in [Glucose, BloodPressure, SkinThickness, Insulin, BMI]
@@ -121,9 +109,11 @@ Store history (Adam)
 Compile: SGD optimizer, binary crossentropy, accuracy
 Train: 100 epochs, batch 32, early stopping
 Store history (SGD)
-\end{lstlisting}
+\end{verbatim}
 
 \subsection*{Regularized Model Performance}
+The regularized model employs dropout to mitigate overfitting and batch normalization for stable training. Adam converges faster, while SGD provides steady improvement.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{assets/diabetes/adam_diabetes_loss.png}
@@ -136,7 +126,7 @@ Store history (SGD)
     \caption{Loss of the Regularized Model (Adam and SGD Optimizers)}
 \end{figure}
 
-\clearpage
+\clearpage % Ensure clean page break before next section
 
 \subsection*{Cassava Plant Disease Dataset}
 The Cassava Plant Disease Dataset contains images of cassava leaves, labeled into five classes: Cassava Bacterial Blight (CBB), Cassava Brown Streak Disease (CBSD), Cassava Green Mottle (CGM), Cassava Mosaic Disease (CMD), and Healthy. The dataset includes:
@@ -148,6 +138,8 @@ The Cassava Plant Disease Dataset contains images of cassava leaves, labeled int
 The dataset comprises approximately 21,000 images, with about 20\% per class, split into 80\% training and 20\% testing. Images were normalized to [0,1], and data augmentation was applied.
 
 \subsubsection*{Sample Images}
+Below are sample images, including representatives of each class:
+
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.45\textwidth}
@@ -184,12 +176,14 @@ The dataset comprises approximately 21,000 images, with about 20\% per class, sp
     \caption{Sample images from the Cassava Plant Disease Dataset}
 \end{figure}
 
-\clearpage
+\clearpage % Ensure clean page break before next section
 
+% Section 2: Target and Feature Selection
 \section*{Target and Feature Selection}
 \subsection*{Cassava Plant Disease Dataset}
 The target is a categorical label (0: CBB, 1: CBSD, 2: CGM, 3: CMD, 4: Healthy). Features are pixel intensities from 224x224x3 images, normalized with data augmentation applied.
 
+% Section 4: Neural Network Models for Cassava Dataset
 \section*{Neural Network Models for Cassava Dataset}
 Two CNN models were implemented: a custom CNN and a pre-trained ResNet50 model, both utilizing data augmentation and early stopping (patience=10, monitoring validation loss) to address overfitting and underfitting. Models were trained with the Adam optimizer in Google Colab.
 
@@ -201,6 +195,7 @@ Data augmentation enhances model robustness with:
     \item Zoom: Up to 20\% zoom range.
     \item Shear: Up to 20\% shear range.
 \end{itemize}
+Augmented outputs (e.g., rotated CBB, flipped CMD) increase dataset diversity:
 
 \begin{figure}[H]
     \centering
@@ -209,7 +204,8 @@ Data augmentation enhances model robustness with:
 \end{figure}
 
 \subsection*{Custom CNN Model}
-\begin{lstlisting}
+\textbf{Pseudocode:}
+\begin{verbatim}
 # Preprocess data
 Load train.csv, train_images, label_map.json
 Resize images to 224x224, normalize
@@ -222,12 +218,12 @@ Monitor val loss, patience 10, restore best weights
 
 # Define CustomCNN
 Features:
-    Conv2D(32, 3x3, ReLU) -> MaxPool(2x2)
-    Conv2D(64, 3x3, ReLU) -> MaxPool(2x2)
-    Conv2D(128, 3x3, ReLU) -> MaxPool(2x2)
-    Conv2D(256, 3x3, ReLU) -> MaxPool(2x2)
+    Conv2D(32, 3x3, ReLU) → MaxPool(2x2)
+    Conv2D(64, 3x3, ReLU) → MaxPool(2x2)
+    Conv2D(128, 3x3, ReLU) → MaxPool(2x2)
+    Conv2D(256, 3x3, ReLU) → MaxPool(2x2)
 Classifier:
-    Flatten -> Dense(512, ReLU) -> Dropout(0.5) -> Dense(num_classes, softmax)
+    Flatten → Dense(512, ReLU) → Dropout(0.5) → Dense(num_classes, softmax)
 
 # Training
 Device: CUDA/CPU
@@ -236,18 +232,13 @@ Loss: CrossEntropy
 Train 10 epochs, ~40 images/epoch
 Log loss, accuracy per batch/epoch
 Save model weights
-\end{lstlisting}
+\end{verbatim}
+
 \subsection*{Custom CNN Performance}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{assets/cassava/custom_acc_loss.png}
+    \includegraphics[width=0.8\textwidth]{assets/cassava/custom_acc_loss.png}
     \caption{Accuracy and Loss Curves of Custom CNN Model without Early Stopping}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{assets/cassava/early_custom_loss_accu.png}
-    \caption{Accuracy and Loss Curves of Custom CNN Model with Early Stopping}
 \end{figure}
 
 \begin{verbatim}
@@ -265,10 +256,19 @@ No improvement in validation loss for 3 epoch(s)
 Early stopping triggered!
 \end{verbatim}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/cassava/early_custom_loss_accu.png}
+    \caption{Accuracy and Loss Curves of Custom CNN Model with Early Stopping}
+\end{figure}
 
 \clearpage % Ensure clean page break before next section
+
 \subsection*{Pre-trained ResNet50 Model}
-\begin{lstlisting}
+The ResNet50 model uses pre-trained ImageNet weights with a frozen convolutional base and a custom classifier.
+
+\textbf{Pseudocode:}
+\begin{verbatim}
 # Preprocess Data
 Load label map (5 classes)
 Apply train transforms: resize 224x224, random rotation, flip, affine, normalize
@@ -293,14 +293,59 @@ For each epoch:
   Early stop: save best weights if val loss improves, stop after 10 no-improvement
 Store history: train/val loss, accuracy
 Plot learning curves
-\end{lstlisting}
+\end{verbatim}
 
+\subsection*{Pre-trained ResNet50 Performance}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/cassava/resnet_50.png}
+    \caption{Accuracy and Loss of Pre-trained ResNet50 Model (Adam Optimizer)}
+\end{figure}
+
+\begin{verbatim}
+# Detailed Training Summary: ResNet50 Image Classification
+Dataset: 16,898 images, 5 classes
+Split: 1000 train, 10 val, 200 test
+Device: CUDA
+Setup: Pre-trained ResNet50, frozen conv layers, custom classifier
+Training: 13/20 epochs (early stopping, patience 5)
+- Batch Size: 32 (train, 32 batches), 10 (val, 1 batch)
+- Optimizer: Adam (lr=0.001), Loss: Crossentropy, Metric: Accuracy
+
+# Training Metrics
+- Train Loss: 1.1499 (epoch 1) -> 0.9627 (epoch 2) -> 0.7896 (epoch 6) -> 0.7266 (epoch 13)
+- Train Acc: 62.1% (epoch 1) -> 66.1% (epoch 2) -> 71.7% (epoch 7) -> 73.2% (epoch 13)
+- Batch Loss Range: e.g., epoch 1: 0.7360-1.6883, stabilizes in later epochs
+- Batch Acc Range: e.g., epoch 1: 21.88%-62.1%, stabilizes ~70% by epoch 13
+
+# Validation Metrics
+- Val Loss: 1.0962 (epoch 1) -> 0.6819 (epoch 2) -> 0.6322 (epoch 6) -> 0.5403 (epoch 8, best) -> 0.8341 (epoch 13)
+- Val Acc: 60% (epoch 1) -> 70% (epoch 2) -> 80% (epoch 6) -> 90% (epoch 11) -> 60% (epoch 13)
+- Best Model: Saved at epoch 8 (val loss 0.5403), restored after early stopping
+
+# Early Stopping
+- Triggered at epoch 13 (no val loss improvement after epoch 8)
+- Patience: 5 epochs (pseudocode suggests 10)
+- Val Loss Progression: 0.5403 (epoch 8) -> 0.7757 (9) -> 0.8108 (10) -> 0.5822 (11) -> 0.7424 (12) -> 0.8341 (13)
+
+# Observations
+- Steady train loss reduction (~37%) and acc improvement (~18%)
+- Val metrics unstable due to small val set (10 samples)
+- Possible premature stopping due to strict patience (5 epochs)
+- Classifier likely simple linear layer, not pseudocode’s complex structure
+- Deprecated 'pretrained' parameter used
+\end{verbatim}
+
+\clearpage % Ensure clean page break before next section
+
+% Section 6: Optimizers
 \section*{Optimizers}
 \begin{itemize}
     \item \textbf{Adam}: Used for all models, offering fast convergence via adaptive learning rates.
     \item \textbf{SGD}: Used for the diabetes model, providing stable but slower convergence.
 \end{itemize}
 
+% Section 7: Findings
 \section*{Findings}
 \begin{itemize}
     \item \textbf{Diabetes Dataset}:
@@ -318,6 +363,6 @@ Plot learning curves
     \item \textbf{Recommendations}: Use the regularized model with SGD for diabetes prediction and the pre-trained ResNet50 model with data augmentation for cassava disease classification.
 \end{itemize}
 
-\clearpage
+\clearpage % Ensure clean page break at the end
 
 \end{document}

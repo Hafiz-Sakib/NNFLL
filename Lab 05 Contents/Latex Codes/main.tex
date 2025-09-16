@@ -184,7 +184,7 @@ Augmented outputs (e.g., rotated CBB, flipped CMD) increase dataset diversity:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{example-image}
+    \includegraphics[width=1.0\textwidth]{./assets/cassava/data_aug.png}
     \caption{Examples of Augmented Cassava Images (Rotation, Flip, Zoom, Shear)}
 \end{figure}
 
@@ -222,8 +222,28 @@ Save model weights
 \subsection*{Custom CNN Performance}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{example-image}
-    \caption{Performance of Custom CNN Model (Adam Optimizer) - Accuracy and Loss}
+    \includegraphics[width=0.9\textwidth]{./assets/cassava/custom_acc_loss.png}
+    \caption{Performance of Custom CNN Model without early stopping - Accuracy and Loss Curves}
+\end{figure}
+
+\begin{verbatim}
+# Training results
+Epoch 1/10 | Train Loss: 1.1012 | Train Acc: 0.6562 | Val Loss: 1.5481 | Val Acc: 0.4000
+Validation loss improved, saving model...
+Epoch 2/10 | Train Loss: 1.3483 | Train Acc: 0.5312 | Val Loss: 1.3487 | Val Acc: 0.4000
+Validation loss improved, saving model...
+Epoch 3/10 | Train Loss: 0.9801 | Train Acc: 0.7656 | Val Loss: 1.4076 | Val Acc: 0.4000
+No improvement in validation loss for 1 epoch(s)
+Epoch 4/10 | Train Loss: 1.2332 | Train Acc: 0.5469 | Val Loss: 1.4928 | Val Acc: 0.4000
+No improvement in validation loss for 2 epoch(s)
+Epoch 5/10 | Train Loss: 1.1156 | Train Acc: 0.6562 | Val Loss: 1.5685 | Val Acc: 0.4000
+No improvement in validation loss for 3 epoch(s)
+Early stopping triggered!
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{./assets/cassava/early_custom_loss_accu.png}
+    \caption{Performance of Custom CNN Model with early stopping - Accuracy and Loss Curves}
 \end{figure}
 
 \subsection*{Pretrained ResNet50 Model}
@@ -231,24 +251,30 @@ The ResNet50 model uses pretrained ImageNet weights with a frozen convolutional 
 
 \textbf{Pseudocode:}
 \begin{verbatim}
-# Preprocess data (same as above)
+# Preprocess Data
+Load label map (5 classes)
+Apply train transforms: resize 224x224, random rotation, flip, affine, normalize
+Apply val/test transforms: resize 224x224, normalize
+Load dataset, split: 1000 train, 10 val, 200 test
+Create data loaders: batch 32 (train), 10 (val), 32 (test)
 
-# Define early stopping
-Monitor validation loss, patience 10 epochs, restore best weights
+# Early Stopping
+Monitor val loss, patience 10, restore best weights
 
-# Define model
-Load ResNet50 (pretrained, exclude top)
-Freeze convolutional layers
-Add layers:
-    GlobalAveragePooling2D
-    Dense: 128 neurons, ReLU
-    Dropout (0.5)
-    Dense: 5 neurons, softmax
+# Model
+Load pretrained ResNet50, exclude top
+Freeze conv layers
+Add: GlobalAvgPool2D, Dense(128, ReLU), Dropout(0.5), Dense(5, softmax)
 
-# Train with Adam
-Compile: Adam optimizer, categorical crossentropy, accuracy
-Train: 50 epochs, batch 32, early stopping
-Store history
+# Train
+Compile: Adam, crossentropy, accuracy
+Train 50 epochs, batch 32
+For each epoch:
+  Train: forward, loss, backward, update weights
+  Validate: compute loss, accuracy
+  Early stop: save best weights if val loss improves, stop after 10 no-improvement
+Store history: train/val loss, accuracy
+Plot learning curves
 \end{verbatim}
 
 \subsection*{Pretrained ResNet50 Performance}
@@ -268,46 +294,6 @@ Early stopping (patience=10, monitoring validation loss) is applied to all model
     \item \textbf{Adam}: Used for all models, offering fast convergence via adaptive learning rates.
     \item \textbf{SGD}: Used for the diabetes model, providing stable but slower convergence.
 \end{itemize}
-
-% Section 7: Loss Graphs
-\section*{Loss Graphs}
-Loss curves compare model performance:
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{example-image}
-    \caption{Loss Curves for Regularized Diabetes Model (Adam and SGD Optimizers)}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{example-image}
-    \caption{Loss Curves for Cassava Models (Custom CNN and ResNet50, Adam Optimizer)}
-\end{figure}
-
-% Section 8: Overfitting Analysis
-\section*{Overfitting Analysis}
-The diabetes model is trained without early stopping for 500 epochs to induce overfitting, showing divergent validation loss. For Cassava models, data augmentation and dropout mitigate overfitting, with early stopping ensuring optimal performance.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{example-image}
-    \caption{Overfitting Analysis for Regularized Diabetes Model}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{example-image}
-    \caption{Overfitting Analysis for Cassava Crop Diseases Classification Custom Models}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{example-image}
-    \caption{Overfitting Analysis for Cassava Crop Diseases Classification Pretrained CNN Model}
-\end{figure}
-
-% Section 9: Findings
 \section*{Findings}
 \begin{itemize}
     \item \textbf{Diabetes Dataset}:

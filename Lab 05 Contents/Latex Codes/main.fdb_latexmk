@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1758053869.8674 "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" "main.pdf" "main" 1758053873.47501 0
+["pdflatex"] 1758056059.50522 "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" "main.pdf" "main" 1758056061.31576 0
   "C:/Users/SAKIB/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757473887 570884 c875e9d021f4cbcb765de3d17c34f594 ""
   "C:/Users/SAKIB/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tctt1200.pk" 1758053873 11368 151b39c9c34a104fd08d4f944471f8d5 ""
   "C:/Users/SAKIB/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1719207405 24264027 a7f34fefe87fe86baee30336a400e02b ""
@@ -102,6 +102,9 @@
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
+  "assets/cassava/custom_acc_loss.png" 1758054041 58214 40f90b2d9ab9507cfe66bd07e013e5ae ""
+  "assets/cassava/data_aug.png" 1758055340 1003176 af1ff58372d91680df69dd5ad68c79ec ""
+  "assets/cassava/early_custom_loss_accu.png" 1758054389 58955 2cfdca0bf3cabf9301236c44f2d25795 ""
   "assets/class_images/class_0.jpg" 1709868398 95465 8d0ecb22002ef12dc8f99eba7f7c0c30 ""
   "assets/class_images/class_1.jpg" 1709868398 77513 d25b60e4abd33e62e24d51fc18ae8a97 ""
   "assets/class_images/class_2.jpg" 1709868398 87441 cc0714a7a246e495b66a8d42d832046e ""
@@ -109,10 +112,10 @@
   "assets/class_images/class_4.jpg" 1709868398 127827 6753748cad15cdc7a62a8e91b6913d1b ""
   "assets/diabetes/adam_diabetes_loss.png" 1758003168 66022 8011a3a662d93bc611f4d05ac70e086d ""
   "assets/diabetes/sgd_diabetes_loss.png" 1758003154 70746 942c537549aae38b8b825ab0b2606e89 ""
-  "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" 1758053868 13375 59d8e20d6dd083cb87637463b1c04667 ""
-  "main.aux" 1758053871 2231 39a65a488879aca0221a4ab6e0b40751 "pdflatex"
-  "main.out" 1758053870 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1758053868 13375 59d8e20d6dd083cb87637463b1c04667 ""
+  "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" 1758056056 13376 56e30dc8c3f81b7599c275f97dca4924 ""
+  "main.aux" 1758056061 1488 f8f65980cdaa2f9df17aef7c3f5390cd "pdflatex"
+  "main.out" 1758056060 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1758056056 13376 56e30dc8c3f81b7599c275f97dca4924 ""
   (generated)
   "main.aux"
   "main.log"

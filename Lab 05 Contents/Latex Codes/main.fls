@@ -277,6 +277,10 @@ INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.p
 INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.pdf
 INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.pdf
 INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.pdf
+INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmtt.fd
+INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmtt.fd
+INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmtt.fd
+INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tctt1200.tfm
 INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.tex
 INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.tex
 INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.pdf
@@ -315,6 +319,8 @@ INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.p
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
+INPUT C:\Users\SAKIB\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tctt1200.pk
+INPUT C:\Users\SAKIB\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tctt1200.pk
 INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
 INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
 INPUT C:\Users\SAKIB\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmss17.pfb

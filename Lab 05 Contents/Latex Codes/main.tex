@@ -192,31 +192,31 @@ Augmented outputs (e.g., rotated CBB, flipped CMD) increase dataset diversity:
 \textbf{Pseudocode:}
 \begin{verbatim}
 # Preprocess data
-Load train.csv, train_images, label_num_to_disease_map.json
-Normalize pixel values to [0,1]
-Apply data augmentation (rotation, flip, zoom)
-Split data: 80% train, 20% test
+Load train.csv, train_images, label_map.json
+Resize images to 224x224, normalize
+Augment: rotate, flip, zoom
+Split: 1000 train, 10 val, 200 test
+Create DataLoaders: batch 32 (train), 10 (val), 32 (test)
 
-# Define early stopping
-Monitor validation loss, patience 10 epochs, restore best weights
+# Early stopping
+Monitor val loss, patience 10, restore best weights
 
-# Define model
-Sequential model:
-    Conv2D: 32 filters, 3x3, ReLU, input 224x224x3
-    MaxPooling2D: 2x2
-    Conv2D: 64 filters, 3x3, ReLU
-    MaxPooling2D: 2x2
-    Conv2D: 128 filters, 3x3, ReLU
-    MaxPooling2D: 2x2
-    Flatten
-    Dense: 128 neurons, ReLU
-    Dropout (0.5)
-    Dense: 5 neurons, softmax
+# Define CustomCNN
+Features:
+    Conv2D(32, 3x3, ReLU) → MaxPool(2x2)
+    Conv2D(64, 3x3, ReLU) → MaxPool(2x2)
+    Conv2D(128, 3x3, ReLU) → MaxPool(2x2)
+    Conv2D(256, 3x3, ReLU) → MaxPool(2x2)
+Classifier:
+    Flatten → Dense(512, ReLU) → Dropout(0.5) → Dense(num_classes, softmax)
 
-# Train with Adam
-Compile: Adam optimizer, categorical crossentropy, accuracy
-Train: 50 epochs, batch 32, early stopping
-Store history
+# Training
+Device: CUDA/CPU
+Optimizer: Adam(lr=1e-3)
+Loss: CrossEntropy
+Train 10 epochs, ~40 images/epoch
+Log loss, accuracy per batch/epoch
+Save model weights
 \end{verbatim}
 
 \subsection*{Custom CNN Performance}

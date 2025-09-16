@@ -1,6 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1758052784.55002 "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" "main.pdf" "main" 1758052786.07129 0
+["pdflatex"] 1758053869.8674 "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" "main.pdf" "main" 1758053873.47501 0
   "C:/Users/SAKIB/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757473887 570884 c875e9d021f4cbcb765de3d17c34f594 ""
+  "C:/Users/SAKIB/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tctt1200.pk" 1758053873 11368 151b39c9c34a104fd08d4f944471f8d5 ""
   "C:/Users/SAKIB/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1719207405 24264027 a7f34fefe87fe86baee30336a400e02b ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136750654 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -8,6 +9,7 @@
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/palatino/pplr7t.tfm" 1136750654 1804 7b5f73028f6509167f47ace9d69509ed ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/palatino/pplr8c.tfm" 1136750654 1348 0e8eb69b4437626c0f6c9bed4a4e373c ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136750654 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
+  "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tctt1200.tfm" 993062566 1284 6abcddffeae037bf4ed0c8e16ae5cd52 ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1233951854 908 2921f8a10601f252058503cc6570e581 ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
@@ -52,6 +54,7 @@
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/tex/latex/base/atbegshi-ltx.sty" 1718106413 2963 e56732bbb93cfa019febfd0c7eaf1d21 ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/tex/latex/base/atveryend-ltx.sty" 1718106413 2378 05fbb4f2b23b0e142f8cd3440c37e72e ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo" 1718106413 8449 30d84ec2eac77409e31fe51403c1ed64 ""
+  "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmtt.fd" 1718106413 2287 003e26f17fb2011982a0904ffee9cab0 ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty" 1579093635 6253 f1cb470c9199e7110a27851508ed7a5c ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty" 1696169587 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
   "C:/Users/SAKIB/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty" 1696169587 72619 ee90b6612147680fd73c3b1406a74245 ""
@@ -106,10 +109,10 @@
   "assets/class_images/class_4.jpg" 1709868398 127827 6753748cad15cdc7a62a8e91b6913d1b ""
   "assets/diabetes/adam_diabetes_loss.png" 1758003168 66022 8011a3a662d93bc611f4d05ac70e086d ""
   "assets/diabetes/sgd_diabetes_loss.png" 1758003154 70746 942c537549aae38b8b825ab0b2606e89 ""
-  "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" 1758052781 13350 d3a3fffea324942c19bfdb9b62bb270d ""
-  "main.aux" 1758052785 2231 39a65a488879aca0221a4ab6e0b40751 "pdflatex"
-  "main.out" 1758052785 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1758052781 13350 d3a3fffea324942c19bfdb9b62bb270d ""
+  "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" 1758053868 13375 59d8e20d6dd083cb87637463b1c04667 ""
+  "main.aux" 1758053871 2231 39a65a488879aca0221a4ab6e0b40751 "pdflatex"
+  "main.out" 1758053870 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1758053868 13375 59d8e20d6dd083cb87637463b1c04667 ""
   (generated)
   "main.aux"
   "main.log"

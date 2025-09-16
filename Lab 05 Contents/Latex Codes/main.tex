@@ -138,12 +138,41 @@ Store history (SGD)
 
 \clearpage
 
-\subsection*{Cassava Plant Disease Dataset}
+\subsection*{Cassava Plant Disease Dataset Details}
 The Cassava Plant Disease Dataset contains images of cassava leaves, labeled into five classes: Cassava Bacterial Blight (CBB), Cassava Brown Streak Disease (CBSD), Cassava Green Mottle (CGM), Cassava Mosaic Disease (CMD), and Healthy. The dataset includes:
 \begin{itemize}
     \item \textbf{train\_images}: Folder with images resized to 224x224 pixels (RGB).
     \item \textbf{label\_num\_to\_disease\_map.json}: JSON file mapping labels (0–4) to disease names.
-    \item \textbf{train.csv}: CSV file mapping image filenames to labels.
+    \begin{itemize}
+    \item[0:] Cassava Bacterial Blight (CBB)
+    \item[1:] Cassava Brown Streak Disease (CBSD)
+    \item[2:] Cassava Green Mottle (CGM)
+    \item[3:] Cassava Mosaic Disease (CMD)
+    \item[4:] Healthy
+\end{itemize}
+
+    \item \textbf{train.csv}: CSV file mapping image filenames to labels.For example : 
+    \begin{table}[h!]
+\centering
+% Increase row height
+\renewcommand{\arraystretch}{1.5}
+% Increase column padding
+\setlength{\tabcolsep}{44pt}
+
+\begin{tabular}{|c|c|}
+\hline
+\textbf{image\_id} & \textbf{label} \\ \hline
+1000015157.jpg & 0 \\ \hline
+1000201771.jpg & 2 \\ \hline
+100042118.jpg  & 1 \\ \hline
+1000723321.jpg & 1 \\ \hline
+1000812911.jpg & 4 \\ \hline
+1000837476.jpg & 3 \\ \hline
+\end{tabular}
+\caption{Sample image IDs with corresponding labels}
+\label{tab:sample_labels}
+\end{table}
+
 \end{itemize}
 The dataset comprises approximately 21,000 images, with about 20\% per class, split into 80\% training and 20\% testing. Images were normalized to [0,1], and data augmentation was applied.
 
@@ -356,7 +385,7 @@ Training: 13/20 epochs (early stopping, patience 5)
         \item The pre-trained ResNet50 model outperformed the custom CNN due to its pre-trained features.
         \item Early stopping and dropout effectively controlled overfitting.
     \end{itemize}
-    \item \textbf{Recommendations}: Use the regularized model with SGD for diabetes prediction and the pre-trained ResNet50 model with data augmentation for cassava disease classification.
+    \item \textbf{Decision}: Use the regularized model with SGD for diabetes prediction and the pre-trained ResNet50 model with data augmentation for cassava disease classification.
 \end{itemize}
 
 \clearpage

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1758059271.52633 "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" "main.pdf" "main" 1758059273.64586 0
+["pdflatex"] 1758059519.79467 "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" "main.pdf" "main" 1758059521.94764 0
   "C:/Users/SAKIB/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1758058769 570884 c875e9d021f4cbcb765de3d17c34f594 ""
   "C:/Users/SAKIB/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk" 1758057645 21972 b83469f59e361ee3e8679060d6e0c799 ""
   "C:/Users/SAKIB/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1758057331 24152 a84e600632819ffa42a33cb433e37227 ""
@@ -117,6 +117,7 @@
   "assets/cassava/custom_acc_loss.png" 1758054041 58214 40f90b2d9ab9507cfe66bd07e013e5ae ""
   "assets/cassava/data_aug.png" 1758055340 1003176 af1ff58372d91680df69dd5ad68c79ec ""
   "assets/cassava/early_custom_loss_accu.png" 1758054389 58955 2cfdca0bf3cabf9301236c44f2d25795 ""
+  "assets/cassava/resnet_50.png" 1758056677 60995 1316d96b0598e16e47a593ee56e42153 ""
   "assets/class_images/class_0.jpg" 1709868398 95465 8d0ecb22002ef12dc8f99eba7f7c0c30 ""
   "assets/class_images/class_1.jpg" 1709868398 77513 d25b60e4abd33e62e24d51fc18ae8a97 ""
   "assets/class_images/class_2.jpg" 1709868398 87441 cc0714a7a246e495b66a8d42d832046e ""
@@ -124,10 +125,10 @@
   "assets/class_images/class_4.jpg" 1709868398 127827 6753748cad15cdc7a62a8e91b6913d1b ""
   "assets/diabetes/adam_diabetes_loss.png" 1758003168 66022 8011a3a662d93bc611f4d05ac70e086d ""
   "assets/diabetes/sgd_diabetes_loss.png" 1758003154 70746 942c537549aae38b8b825ab0b2606e89 ""
-  "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" 1758059270 13160 c90b952a64fb1cba3e271ce01613a684 ""
-  "main.aux" 1758059273 1244 d2336745428b479477c5b75acb7ba1ef "pdflatex"
-  "main.out" 1758059272 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1758059270 13160 c90b952a64fb1cba3e271ce01613a684 ""
+  "c:/PU Projects/PUC Courses/7th Semester/NNFLL/Lab 05 Contents/Latex Codes/main.tex" 1758059518 15016 03b6ee1090dc7f63017bbdf080de4de2 ""
+  "main.aux" 1758059521 1428 7a10168b046b0036b4c7d0e38d4995f0 "pdflatex"
+  "main.out" 1758059520 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1758059518 15016 03b6ee1090dc7f63017bbdf080de4de2 ""
   (generated)
   "main.aux"
   "main.log"

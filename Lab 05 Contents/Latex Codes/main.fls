@@ -331,6 +331,13 @@ INPUT .\assets\cassava\early_custom_loss_accu.png
 INPUT .\assets\cassava\early_custom_loss_accu.png
 INPUT .\assets\cassava\early_custom_loss_accu.png
 INPUT .\assets\cassava\early_custom_loss_accu.png
+INPUT .\assets\cassava\resnet_50.png
+INPUT .\assets\cassava\resnet_50.png
+INPUT .\assets\cassava\resnet_50.png
+INPUT .\assets\cassava\resnet_50.png
+INPUT .\assets\cassava\resnet_50.png
+INPUT .\assets\cassava\resnet_50.png
+INPUT .\assets\cassava\resnet_50.png
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out

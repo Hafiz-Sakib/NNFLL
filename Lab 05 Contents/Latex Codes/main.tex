@@ -295,6 +295,47 @@ Store history: train/val loss, accuracy
 Plot learning curves
 \end{lstlisting}
 
+
+\subsection*{Pre-trained ResNet50 Performance}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{assets/cassava/resnet_50.png}
+    \caption{Accuracy and Loss of Pre-trained ResNet50 Model (Adam Optimizer)}
+\end{figure}
+\clearpage
+\begin{lstlisting}
+# Detailed Training Summary: ResNet50 Image Classification
+Dataset: 16,898 images, 5 classes
+Split: 1000 train, 10 val, 200 test
+Device: CUDA
+Setup: Pre-trained ResNet50, frozen conv layers, custom classifier
+Training: 13/20 epochs (early stopping, patience 5)
+- Batch Size: 32 (train, 32 batches), 10 (val, 1 batch)
+- Optimizer: Adam (lr=0.001), Loss: Crossentropy, Metric: Accuracy
+
+# Training Metrics
+- Train Loss: 1.1499 (epoch 1) -> 0.9627 (epoch 2) -> 0.7896 (epoch 6) -> 0.7266 (epoch 13)
+- Train Acc: 62.1% (epoch 1) -> 66.1% (epoch 2) -> 71.7% (epoch 7) -> 73.2% (epoch 13)
+- Batch Loss Range: epoch 1: 0.7360-1.6883, stabilizes later
+- Batch Acc Range: epoch 1: 21.88%-62.1%, stabilizes ~70% by epoch 13
+
+# Validation Metrics
+- Val Loss: 1.0962 (epoch 1) -> 0.6819 (epoch 2) -> 0.6322 (epoch 6) -> 0.5403 (epoch 8, best) -> 0.8341 (epoch 13)
+- Val Acc: 60% (epoch 1) -> 70% (epoch 2) -> 80% (epoch 6) -> 90% (epoch 11) -> 60% (epoch 13)
+- Best Model: Saved at epoch 8 (val loss 0.5403), restored after early stopping
+
+# Early Stopping
+- Triggered at epoch 13 (no val loss improvement after epoch 8)
+- Patience: 5 epochs (pseudocode suggests 10)
+- Val Loss Progression: 0.5403 (epoch 8) -> 0.7757 (9) -> 0.8108 (10) -> 0.5822 (11) -> 0.7424 (12) -> 0.8341 (13)
+
+# Observations
+- Steady train loss reduction (~37%) and acc improvement (~18%)
+- Val metrics unstable due to small val set (10 samples)
+- Possible premature stopping due to strict patience (5 epochs)
+- Deprecated 'pretrained' parameter used
+\end{lstlisting}
+\clearpage
 \section*{Optimizers}
 \begin{itemize}
     \item \textbf{Adam}: Used for all models, offering fast convergence via adaptive learning rates.

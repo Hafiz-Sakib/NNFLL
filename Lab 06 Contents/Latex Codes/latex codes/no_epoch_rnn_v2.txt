@@ -66,11 +66,7 @@
 \begin{document}
 
 \section*{Introduction}
-Next-word prediction is a fundamental task in natural language processing (NLP) that enables applications such as text autocompletion, intelligent keyboards, and conversational AI systems. This lab report presents the development of a next-word prediction model for Bangla text using Simple Recurrent Neural Networks (SimpleRNN). Unlike more complex architectures like LSTM, this model employs a streamlined RNN approach to capture sequential patterns while maintaining computational efficiency. 
-
-The model was trained on a curated dataset extracted from \textbf{\bengalifont ``মানবপুত্র''} (Manabputro), a renowned Bengali novel by acclaimed author \textbf{\bengalifont সমরেশ মজুমদার} (Samaresh Majumdar). The dataset focuses on narrative segments describing the fictional city of Kankapur, providing authentic Bangla literary text for training. This approach ensures the model learns from high-quality Bengali prose with rich linguistic patterns.
-
-This report comprehensively outlines the dataset characteristics, model architecture, training analysis, experimental results, and conclusions, demonstrating the effectiveness of SimpleRNN for Bangla language modeling tasks.
+Next-word prediction is a key task in natural language processing (NLP), enabling applications such as text autocompletion, chatbots, and language modeling. This lab report details the development of a next-word prediction model for Bangla text using Simple Recurrent Neural Networks (SimpleRNN). Unlike complex architectures like LSTM, this model employs a simpler RNN approach to capture sequential dependencies while maintaining computational efficiency. The model was trained on a Bangla dataset describing a fictional city, Kankapur, and achieved competitive performance. This report outlines the dataset, model architecture, training results, experimental results with screenshots, findings, and conclusions.
 
 \section*{Dataset Details}
 The dataset is derived from the acclaimed Bengali novel \textbf{\bengalifont ``মানবপুত্র''} (Manabputro) by reknown author \textbf{\bengalifont সমরেশ মজুমদার} (Samaresh Majumdar). The text was extracted from narrative and dialogue segments describing the fictional city of Kankapur, known for its peaceful environment and unique social structure. The dataset, stored in an Excel file (\texttt{somoresh.xlsx}), contains 2,478 Bangla words that capture the distinctive literary style of Samaresh Majumdar, characterized by rich descriptions and authentic character dialogues.
@@ -158,56 +154,6 @@ Steps:
     - Predict top 3 words using model.predict and np.argsort
     - Return predicted words
 \end{lstlisting}
-
-\section*{Model Training Analysis}
-The SimpleRNN model completed training in 95 epochs, demonstrating efficient learning and strong convergence. The training process revealed optimal performance with minimal computational requirements.
-
-\subsection*{Training Performance Summary}
-\begin{table}[H]
-\centering
-\caption{Model Training Performance Metrics}
-\label{tab:training_analysis}
-\renewcommand{\arraystretch}{2} % Increased row spacing
-\setlength{\tabcolsep}{15pt} % Increased column spacing
-\begin{tabular}{|l|r|}
-\hline
-\textbf{Metric} & \textbf{Value} \\
-\hline 
-Total Training Time & 39.52 seconds \\
-\hline
-Final Epoch & 95 (early stopping at 85) \\
-\hline
-Best Model Weights & Epoch 85 \\
-\hline
-Final Accuracy & 99.98\% \\
-\hline
-Final Loss & 0.0040 \\
-\hline
-Learning Rate Reductions & 9 \\
-\hline
-Final Learning Rate & $1.95 \times 10^{-6}$ \\
-\hline
-\end{tabular}
-\end{table}
-\subsection*{Training Phases}
-The training progressed through four distinct phases:
-
-\begin{itemize}
-    \item \textbf{Rapid Learning (Epochs 1-10)}: Accuracy surged from 1.14\% to 94.51\%
-    \item \textbf{Refinement (Epochs 11-25)}: Accuracy improved to 99.32\% with first LR reduction
-    \item \textbf{Optimization (Epochs 26-55)}: Multiple LR reductions fine-tuned to 99.94\% accuracy
-    \item \textbf{Convergence (Epochs 56-85)}: Stable performance with accuracy >99.9\%
-\end{itemize}
-
-\subsection*{Key Observations}
-\begin{itemize}
-    \item 9 learning rate reductions enabled precise convergence
-    \item Average step time: 5-7ms after initial epoch
-    \item Early stopping preserved optimal weights at epoch 85
-    \item SimpleRNN showed 40\% faster training than equivalent LSTM
-\end{itemize}
-
-The training confirms SimpleRNN's effectiveness for Bangla text prediction, balancing performance with computational efficiency.
 
 \section*{Findings}
 The SimpleRNN model was trained on 2,473 sequences, achieving strong performance with faster training times compared to LSTM alternatives. Key findings include:

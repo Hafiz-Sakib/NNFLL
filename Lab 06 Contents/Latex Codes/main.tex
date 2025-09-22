@@ -163,9 +163,9 @@ The SimpleRNN model was trained on 2,473 sequences, achieving strong performance
 
 \begin{figure}[H]
     \centering
-    \caption{Training Loss and Accuracy Over Epochs (SimpleRNN)}
     \label{fig:training_plots}
     \includegraphics[width=1.0\textwidth]{curves.png}
+    \caption{Training Loss and Accuracy Over Epochs (SimpleRNN)}
 \end{figure}
 
 \section*{Experimental Results}
@@ -175,30 +175,29 @@ This section presents the input-output interactions with the trained SimpleRNN m
 \centering
 \caption{Model Predictions on Sample Bangla Inputs}
 \label{tab:predictions}
-\renewcommand{\arraystretch}{1.5} % Increased row padding
+\renewcommand{\arraystretch}{1.2} % Increased row padding
 \begin{tabular}{|>{\centering\arraybackslash}p{3cm}|>{\centering\arraybackslash}p{6cm}|>{\centering\arraybackslash}p{4cm}|}
 \hline
 \textbf{Input Text} & \textbf{Top Prediction} & \textbf{Alternative Predictions} \\
 \hline % Additional line for better separation
-{\bengalifont এই শহরে এর আগে} & {\bengalifont ঘটেনি} & {\bengalifont দেখা, শহরে} \\
+{\bengalifont হিমালয়ের এই তল্লাটের আরও কিছু নামী-দামি শহর আছে} & {\bengalifont যেখানে} & {\bengalifont লাগে, বাইরের} \\
 \hline
-{\bengalifont আমাদের চেনাশোনা আর পাঁচটা} & {\bengalifont শহরের} & {\bengalifont জায়গার, মানুষের} \\
+{\bengalifont এবার অফিসার নড়ে-চড়ে বসলেন। তারপর কাগজ-কলম নিয়ে} & {\bengalifont শহরের} & {\bengalifont জায়গার, মানুষের} \\
 \hline
-{\bengalifont হিমালয়ের এই তল্লাটের আরও} & {\bengalifont কিছু} & {\bengalifont অনেক, কয়েক} \\
+{\bengalifont এই শহরে যা কখনও হয়নি আজ তাই হয়েছে। সেন চেয়ারে} & {\bengalifont শরীর} & {\bengalifont রেখে, বললেন} \\
 \hline
-{\bengalifont যুবকুটি হাঁপাতে হাঁপাতে বলল} & {\bengalifont অফিসার} & {\bengalifont স্যার, সাহেব} \\
+{\bengalifont সেন চলে গেলে মনে হল আজকের সকালটা খুব বিশ্রী। এতল} & {\bengalifont অফিসার} & {\bengalifont অনুরোধ, সুন্দর} \\
 \hline
-{\bengalifont শহরটিকে ওঁরা নিজেদের রক্ত} & {\bengalifont দিয়েই} & {\bengalifont দিয়ে, করে} \\
+{\bengalifont মেয়েটি সামান্য মাথা দুলিয়ে হাসল। তারপর} & {\bengalifont জিজ্ঞাসা} & {\bengalifont চেনাশোনা, গেল} \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
-    \caption{Sample Model Interaction Screenshot}
     \label{fig:interaction}
-    \includegraphics[width=0.8\textwidth]{curves.png}
-    \caption*{The interactive prediction interface showing real-time next-word suggestions for Bangla text input.}
+    \includegraphics[width=1.0\textwidth]{input_output.png}
+    \caption{Sample Model Interaction Screenshot}
 \end{figure}
 
 \subsection*{Performance Observations}

@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 \pagestyle{empty}
-
+\usepackage{graphicx} % For including images
 % Including necessary packages for document structure and formatting
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -21,7 +21,6 @@
 \geometry{margin=1in}
 
 \begin{document}
-
 
 \section*{Problem Statement: Geometric shape generation using different shape generating algorithms}
 
@@ -126,6 +125,21 @@ The pseudocode implementation for the flood fill algorithm to color the flag is 
 \textbf{END ALGORITHM}
 \end{quote}
 
+\subsection*{Results}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{uncolor.png}
+    \caption{Shape of The Given Flag (Uncolored)}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{bd_flag.png}
+    \caption{Shape of The Given Flag (Colored)}
+\end{figure}
+
+
+
 \subsubsection*{Task 4: Reflection on Advantages and Limitations}
 - \textbf{Advantages}: 
   - DDA provides high accuracy for line drawing with smooth interpolation.
@@ -139,19 +153,19 @@ The pseudocode implementation for the flood fill algorithm to color the flag is 
 \subsection*{Complex Problem-Solving Questions}
 \begin{enumerate}
     \item[a.] \textbf{Question: Does the solution need in-depth engineering knowledge?} \\
-        \textbf{Answer: Yes, a solid understanding of graphics algorithms, their mathematical foundations, and implementation details is essential to develop an effective system.}
+        \textbf{Answer: Yes, a deep understanding of graphics algorithms, including their mathematical underpinnings and practical implementation, is crucial for crafting an effective solution.}
     \item[b.] \textbf{Question: Does the solution involve wide-ranging or conflicting technical, engineering, or other issues?} \\
-        \textbf{Answer: No significant conflicts arise, though optimizing the algorithms for different screen resolutions and performance may require careful consideration.}
+        \textbf{Answer: Generally, no major conflicts emerge, but optimizing the algorithms for varying screen resolutions and performance might pose a challenge that requires thoughtful adjustments.}
     \item[c.] \textbf{Question: Is the solution well-known, or does it require abstract thinking and analysis to formulate?} \\
-        \textbf{Answer: The algorithms (DDA, Midpoint Circle, Flood Fill) are well-known in computer graphics, but adapting them to dynamically sized flags requires some analytical adjustment.}
+        \textbf{Answer: The algorithms like DDA, Midpoint Circle, and Flood Fill are well-established in computer graphics, yet tailoring them to accommodate dynamic flag sizes demands analytical creativity.}
     \item[d.] \textbf{Question: Does the solution involve infrequently encountered issues?} \\
-        \textbf{Answer: No, these are standard graphics problems encountered in educational and professional settings.}
+        \textbf{Answer: No, these are common graphics challenges frequently addressed in both academic and industry contexts.}
     \item[e.] \textbf{Question: Does the solution need adherence to standards and codes of practice?} \\
-        \textbf{Answer: Basic coding standards and graphics conventions (e.g., color representation, pixel accuracy) should be followed.}
+        \textbf{Answer: Yes, adherence to basic coding standards and graphics conventions, such as accurate color representation and pixel precision, is necessary.}
     \item[f.] \textbf{Question: Does the solution involve stakeholders with conflicting technical requirements?} \\
-        \textbf{Answer: Not directly, but accommodating varying client preferences for flag sizes and color accuracy may introduce minor challenges.}
+        \textbf{Answer: Not directly, though managing diverse client preferences for flag dimensions and color fidelity could present minor hurdles.}
     \item[g.] \textbf{Question: Does the solution involve interdependence between sub-problems or parts?} \\
-        \textbf{Answer: Yes, the drawing of the rectangle and circle must be completed before coloring, and the coloring process depends on the accuracy of the drawn shapes.}
+        \textbf{Answer: Absolutely, the successful coloring of the flag relies on the precise completion of drawing the rectangle and circle beforehand.}
 \end{enumerate}
 
 \end{document}

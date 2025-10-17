@@ -49,57 +49,42 @@
 
 %----------------------------------------
 \section*{Career Objective}
-A highly committed, result-oriented, sound-minded, and dedicated professional with 8 years of proven experience in the banking sector, seeking a banking job position in a dynamic organization that requires an expert who can efficiently and effectively handle diverse banking needs.
+A highly committed, result-oriented, sound-minded, and dedicated professional with almost 8 years of proven experience in the banking sector, seeking a banking job position in a dynamic organization that requires an expert who can efficiently and effectively handle diverse banking needs.
 
 %----------------------------------------
 \section*{Professional Profile}
 Culturally sensitive and experienced leader with strong communication skills—written, verbal, and presentational. Adept at strategically identifying, developing, and implementing customized solutions to support business strategies. Excellent in strategic planning, business engagement, organizational development, and team building.
 
-%----------------------------------------
-\section*{Areas of Expertise}
-\begin{tabular}{ p{0.45\linewidth}  p{0.45\linewidth} }
-\faCheck~ General Banking Operations & \faCheck~ Cash Management\\
-\faCheck~ Credit Card Operations & \faCheck~ Mail Correspondence\\
-\faCheck~ International Trade Finance Operations & \faCheck~ Leadership\\
-\faCheck~ Money Laundering Prevention & \faCheck~ Marketing Strategies\\
-\end{tabular}
 
 %----------------------------------------
 \section*{Career Summary}
 \begin{itemize}[leftmargin=*]
-    \item Over 8 years of working experience in the banking sector.
-    \item Skilled in General Banking, Cash, Credit, International Trade Finance, and Customer Service.
-    \item Sound knowledge of day-to-day operations in branch banking.
-    \item Good reputation with management and excellent communication skills.
-    \item Strong ability to build professional relationships with clients.
-    \item Capable of adjusting communication style and authority as needed.
+    \item Nearly 8 years of professional experience in the banking sector.
+    \item Proficient in General Banking,Agent Banking,Cash Operations, Credit, and Customer Service.
+    \item Possesses strong knowledge of day-to-day branch banking operations.
+    \item Maintains an excellent reputation with management and demonstrates strong communication skills.
+    \item Highly skilled in building and maintaining professional relationships with clients.
+    \item Able to adapt communication style and authority effectively according to the situation.
 \end{itemize}
 
-%----------------------------------------
-\section*{Salary and Benefits}
-\textbf{Present:} Gross: BDT 43,200 \quad | \quad LFA: BDT 3,600 \quad | \quad PF: BDT 2,250\\
-\textbf{Expected:} BDT 70,000 – 80,000
+\newpage
 
 %----------------------------------------
 \section*{Experience and Training Details}
 
-\textbf{Officer, Branch Service Manager \& General Banking In-Charge} — Islami Bank Bangladesh PLC \hfill (08/11/2017 – 23/10/2015)\\
-\textit{Work Area:} GB In-Charge \quad | \quad \textit{Functions:} Branch Service Manager\\[6pt]
+\textbf{Officer, Branch Service Manager \& General Banking In-Charge} \hfill \textit{(21/01/2018 – 05/10/2025)}\\
+\textbf{Islami Bank Bangladesh PLC}\\[4pt]
+\textit{Work Areas:} Cash In-Charge, General Banking In-Charge, Agent Banking In-Charge\\[6pt]
 
-\textbf{JAIBB (Junior Associate of The Institute of Bankers Bangladesh)} \hfill (01/01/2012 – 31/12/2012)\\[3pt]
-\textbf{AIBB (Associate of The Institute of Bankers Bangladesh)} \hfill (01/01/2012 – 31/12/2012)\\[3pt]
-\textbf{DIB 1 (Diploma in Islami Banking, Part 1)}\\
-\textbf{DIB 2 (Diploma in Islami Banking, Part 2)}\\
-
-%----------------------------------------
-\section*{Professional Achievements}
-\begin{itemize}[leftmargin=*]
-    \item Received two “Thank You” cards from Managing Director for top performance.
-    \item Awarded wristwatch and recognition as Islami Bank Bangladesh PLC Retail Star.
-    \item Achieved 11 weekly stars for deposit collection.
-    \item Commended by Corporate HQ for corporate deposit achievements.
-    \item Named “Star Performer” (June 2009) at Standard Chartered Bank.
+\textbf{Professional Certifications:}\\[4pt]
+\begin{itemize}[leftmargin=1.5cm]
+    \item \textbf{JAIBB} — Junior Associate of The Institute of Bankers Bangladesh
+    \item \textbf{AIBB} — Associate of The Institute of Bankers Bangladesh
+    \item \textbf{Diploma in Islamic Banking (Part I)}
+    \item \textbf{Diploma in Islamic Banking (Part II)}
 \end{itemize}
+
+
 
 %----------------------------------------
 \section*{Educational Qualification}
@@ -111,35 +96,20 @@ Culturally sensitive and experienced leader with strong communication skills—w
 \end{tabular}
 
 %----------------------------------------
-\section*{Computer Skills}
+\section*{Technical \& Personal Competencies}
 \begin{itemize}[leftmargin=*]
-    \item Typing speed: 75 WPM.
-    \item Knowledge of banking management software — eBBS, Card400, Oracle Flexcube.
-    \item Proficient in MS Office (Excel, Word, PowerPoint, Access).
-    \item Skilled in Adobe Photoshop, Illustrator, and web design.
-    \item Knowledge of computer hardware and OS installation.
+    %--- Technical Skills ---
+    \item \textbf{Technical Proficiency:} Typing speed of 75 WPM; skilled in banking software such as eBBS, Card400, and Oracle Flexcube. Proficient in MS Office (Excel, Word, PowerPoint, Access), Adobe Photoshop, Illustrator, and basic web design.
+    \item \textbf{Computer Knowledge:} Experienced in computer hardware setup and operating system installation.
+    
+    %--- Personal Qualities ---
+    \item \textbf{Personal Attributes:} Quick learner, action-oriented, and self-motivated with high integrity, honesty, and reliability.
+    \item \textbf{Interpersonal Skills:} Strong communication, leadership, and customer-handling ability with excellent convincing power.
+    
+    %--- Core Strengths ---
+    \item \textbf{Core Strengths:} Strong analytical and planning capability, high accuracy and attention to detail, and excellent problem-solving and judgment skills.
 \end{itemize}
 
-%----------------------------------------
-\section*{Personal Qualities}
-\begin{itemize}[leftmargin=*]
-    \item Quick learner, action-oriented, and self-motivated.
-    \item High integrity, honesty, and reliability.
-    \item Strong communication and interpersonal skills.
-    \item Excellent customer handling and convincing ability.
-\end{itemize}
-
-%----------------------------------------
-\section*{Key Skills and Strengths}
-\begin{itemize}[leftmargin=*]
-    \item Strong analytical and planning ability.
-    \item High accuracy and attention to detail.
-    \item Excellent problem analysis and judgment.
-\end{itemize}
-
-%----------------------------------------
-\section*{Interests}
-Travelling, Reading Books, Gardening, and Farming.
 
 %----------------------------------------
 \section*{Personal Details}
@@ -156,17 +126,17 @@ Travelling, Reading Books, Gardening, and Farming.
 \textbf{Permanent Address:} & Kerani Bari, Bainjury, Islamabad, Chandanaish, Chattogram \\
 \textbf{Present Address:} & Chowdhury Mansion, Agrani Bank Lane, Boromia Majsid, K.B Aman Ali Road, Chawkbazar, Chattogram-4203 \\
 \textbf{Contact Number:} & 01674687289, 01341037667 \\
-\textbf{Email:} & \href{mailto:tanim.mahamudul@gmail.com}{tanim.mahamudul@gmail.com} \\
+\textbf{Email:} & {tanim.mahamudul@gmail.com} \\
 \end{tabular}
 \renewcommand{\arraystretch}{1.0}
 \end{center}
 
 %----------------------------------------
 \section*{References}
-\textbf{Abir Rahman}\\
-FAVP \& Branch Manager, ONE Bank Limited, Barisal Branch, Dhaka\\[4pt]
-\textbf{Md. Afzal Hossain Khan}\\
-Senior Manager, Card Operation, Standard Chartered Bank, Kawranbazar, Dhaka
+\textbf{Makshudor Rahman}\\
+Lecturer, Bijoy Smarany College\\
+Batiyari, Chattogram\\
+Mobile: 01812380650
 
 %----------------------------------------
 \section*{Declaration}

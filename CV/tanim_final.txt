@@ -33,7 +33,7 @@
 \begin{tabular*}{\textwidth}{@{} l @{\extracolsep{\fill}} r @{}}
 \begin{minipage}[t]{0.7\textwidth}
     {\Huge \textbf{Md. Mahamudul Islam}}\\[6pt]
-    Chowdhury Mansion, Agrani Bank Lane, Boromia Majsid, K.B Aman Ali Road,\\
+    Chowdhury Mansion, Agrani Bank Lane, Boromia Mojsid, K.B Aman Ali Road,\\
     Chawkbazar, Chattogram-4203\\[4pt]
     \faEnvelope~ \href{mailto:tanim.mahamudul@gmail.com}{tanim.mahamudul@gmail.com} \quad  
     \faPhone~ 01674687289, 01341037667
@@ -72,7 +72,7 @@ Culturally sensitive and experienced leader with strong communication skills—w
 %----------------------------------------
 \section*{Experience and Training Details}
 
-\textbf{Officer, Branch Service Manager \& General Banking In-Charge} \hfill \textit{(21/01/2018 – 05/10/2025)}\\
+\textbf{Officer} \hfill \textit{(21/01/2018 – 05/10/2025)}\\
 \textbf{Islami Bank Bangladesh PLC}\\[4pt]
 \textit{Work Areas:} Cash In-Charge, General Banking In-Charge, Agent Banking In-Charge\\[6pt]
 

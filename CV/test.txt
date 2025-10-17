@@ -1,0 +1,172 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{fontawesome5}
+\usepackage{array}
+\usepackage{mathpazo}
+
+\geometry{margin=0.8in}
+\setstretch{1.1}
+\pagenumbering{gobble}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \textbf{Md. Mahamudul Islam}}\\[6pt]
+    K.B Aman Ali Road, Boromia Majsid, Chawkbazar, Chattogram-4203\\[3pt]
+    \faEnvelope~ \href{mailto:tanim.mahamudul@gmail.com}{tanim.mahamudul@gmail.com} \quad | \quad 
+    \faPhone~ 01674687289 / 01341037667
+\end{center}
+
+%----------------------------------------
+\section*{Career Objective}
+A highly committed, result-oriented, and dedicated professional with over 8 years of proven experience in the banking sector, seeking a challenging position in a dynamic organization where my expertise in handling diverse banking operations can contribute to institutional growth and efficiency.
+
+%----------------------------------------
+\section*{Professional Profile}
+Culturally sensitive and experienced leader with excellent communication skills—written, verbal, and presentational. Adept at identifying, developing, and implementing strategic solutions aligned with organizational goals. Skilled in strategic planning, team building, and business development with strong problem-solving and leadership abilities.
+
+%----------------------------------------
+\section*{Areas of Expertise}
+\begin{tabular}{ p{0.45\linewidth}  p{0.45\linewidth} }
+\faCheck~ General Banking Operations & \faCheck~ Cash Management\\
+\faCheck~ Credit Card Operations & \faCheck~ Mail Correspondence\\
+\faCheck~ International Trade Finance & \faCheck~ Leadership\\
+\faCheck~ Money Laundering Prevention & \faCheck~ Marketing Strategies\\
+\end{tabular}
+
+%----------------------------------------
+\section*{Career Summary}
+\begin{itemize}[leftmargin=*]
+    \item Over 8 years of experience in the banking sector covering General Banking, Cash, Credit, International Trade Finance, and Customer Service.
+    \item Sound knowledge of day-to-day branch banking operations.
+    \item Excellent communication skills and strong professional relationships with clients.
+    \item Recognized for strong problem-solving, leadership, and interpersonal skills.
+\end{itemize}
+
+%----------------------------------------
+\section*{Salary and Benefits}
+\textbf{Present:} Gross: BDT 43,200 \quad | \quad LFA: BDT 3,600 \quad | \quad PF: BDT 2,250\\
+\textbf{Expected:} BDT 70,000 – 80,000
+
+%----------------------------------------
+\section*{Work Experience}
+
+\subsection*{ONE Bank Limited}
+\textbf{Officer, Branch Service Manager \& GB In-Charge} — Sonargaon Branch \hfill (08/11/2017 – 23/10/2018)\\
+\textit{Responsibilities:} Branch Service Management and General Banking Operations.
+
+\textbf{Officer} — Nandipara Branch \hfill (01/01/2017 – 08/11/2017)\\
+\textit{Responsibilities:} General Banking \& Accounts Operations.
+
+\textbf{Junior Officer} — Basabo \& Nandipara Branch \hfill (01/01/2015 – 31/12/2016)\\
+\textit{Responsibilities:} General Banking \& Credit Department Operations.
+
+\textbf{Assistant Officer} — Basabo Branch \hfill (01/01/2013 – 31/12/2014)\\
+\textit{Responsibilities:} General Banking \& Credit Department Functions.
+
+\textbf{Trainee Assistant Officer} — Barisal Branch \hfill (01/01/2012 – 31/12/2012)\\
+\textit{Responsibilities:} General Banking \& Accounts Department.
+
+\subsection*{Standard Chartered Bank}
+\textbf{Operations Assistant, Card Operation} \hfill (2008 – 2012)\\
+\textit{Responsibilities:}
+\begin{itemize}[leftmargin=*]
+    \item Resolved credit card issues and customer complaints.
+    \item Processed settlements and transactions.
+    \item Handled pay order issuance and collection for card bill settlements.
+\end{itemize}
+
+%----------------------------------------
+\section*{Professional Achievements}
+\begin{itemize}[leftmargin=*]
+    \item Received two Thank You cards from Managing Director for top performance.
+    \item Awarded wristwatch and recognition as ONE Bank Retail Star.
+    \item Achieved 11 weekly stars for deposit collection.
+    \item Commended by Corporate HQ for corporate deposit achievements.
+    \item Named Star Performer (June 2009) at Standard Chartered Bank.
+\end{itemize}
+
+%----------------------------------------
+\section*{Educational Qualification}
+\begin{tabular}{p{0.35\linewidth} p{0.6\linewidth}}
+\textbf{MBA (Management)} & National University, Govt. City College, Chattogram (2015) — CGPA: 3.38/4.00\\
+\textbf{BBA (Management)} & National University, Govt. City College, Chattogram (2014) — CGPA: 3.02/4.00\\
+\textbf{HSC (Business Studies)} & Govt. City College, Chattogram (2009) — GPA: 4.50/5.00\\
+\textbf{SSC (Business Studies)} & Begum Gul Chaman Ara Academy, Chattogram (2007) — GPA: 4.69/5.00\\
+\end{tabular}
+
+%----------------------------------------
+\section*{Professional Training}
+\begin{itemize}[leftmargin=*]
+    \item Prevention of Money Laundering \& Combating Financing of Terrorism — Jan 23, 2018
+    \item IT Security Awareness in Banking — Jun 13, 2016
+    \item Foundation Course on Banking — Jan 18–29, 2015
+    \item Advanced Sales Skills \& Relationship Management — Mar 5, 2015
+    \item BEFTN \& Mobile Financial Services — Aug 11, 2014
+\end{itemize}
+
+%----------------------------------------
+\section*{Computer Skills}
+\begin{itemize}[leftmargin=*]
+    \item Typing speed: 75 WPM.
+    \item Experienced with eBBS, Card400, and Oracle Flexcube systems.
+    \item Skilled in MS Office (Excel, Word, PowerPoint, Access).
+    \item Familiar with Adobe Photoshop, Illustrator, and web design.
+    \item Knowledgeable in computer hardware and OS installation.
+\end{itemize}
+
+%----------------------------------------
+\section*{Personal Qualities}
+Quick learner, action-oriented, honest, and reliable with strong analytical and communication skills. Capable of building client trust and handling responsibilities independently.
+
+%----------------------------------------
+\section*{Key Skills and Strengths}
+Analytical thinking, planning ability, accuracy, problem-solving, and decision-making based on sound judgment.
+
+%----------------------------------------
+\section*{Interests}
+Travelling, Reading Books, Gardening, and Farming.
+
+%----------------------------------------
+%----------------------------------------
+\section*{Personal Details}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{@{} p{0.35\linewidth} p{0.6\linewidth} @{}}
+\textbf{Date of Birth:} & 15 December 1982 \\
+\textbf{Nationality:} & Bangladeshi \\
+\textbf{Religion:} & Islam \\
+\textbf{Present Address:} & K.B Aman Ali Road, Boromia Majsid, Chawkbazar, Chattogram-4203 \\
+\textbf{Contact Number:} & 01674687289 / 01341037667 \\
+\textbf{Email:} & \href{mailto:tanim.mahamudul@gmail.com}{tanim.mahamudul@gmail.com} \\
+\end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\end{center}
+
+
+%----------------------------------------
+\section*{References}
+\textbf{Abir Rahman} \\
+FAVP \& Branch Manager, ONE Bank Limited, Barisal Branch, Dhaka\\[4pt]
+\textbf{Md. Afzal Hossain Khan}\\
+Senior Manager, Card Operation, Standard Chartered Bank, Kawranbazar, Dhaka
+
+%----------------------------------------
+\section*{Declaration}
+I, the undersigned, confirm that the information given above is true and accurate to the best of my knowledge.
+
+\vspace{0.5cm}
+\noindent\rule{6cm}{0.4pt}\\
+\textbf{Signature}
+
+\end{document}

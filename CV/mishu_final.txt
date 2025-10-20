@@ -1,0 +1,134 @@
+\documentclass[11pt,a4paper]{article}
+
+%----------------------------------------
+% Packages
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{fontawesome5}
+\usepackage{array}
+\usepackage{mathpazo}
+\usepackage{graphicx}
+\usepackage{parskip}
+
+%----------------------------------------
+% Page Setup
+\geometry{margin=0.8in}
+\setstretch{1.1}
+\pagenumbering{gobble}
+
+%----------------------------------------
+% Section Formatting
+\titleformat{\section}{\Large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+
+%----------------------------------------
+\begin{document}
+
+%----------------------------------------
+% Header with photo (left text, right image)
+\begin{table}[!ht]
+\begin{tabular*}{\textwidth}{@{} l @{\extracolsep{\fill}} r @{}}
+\begin{minipage}[t]{0.7\textwidth}
+    {\Huge \textbf{Taslima Akter}}\\[6pt]
+    Chowdhury Mansion, Agrani Bank Lane, Boromia Mosjid, K.B Aman Ali Road,\\
+    Chawkbazar, Chattogram-4203\\[4pt]
+    \faEnvelope~ \href{mailto:tmishu71@gmail.com}{tmishu71@gmail.com} \quad  
+    \faPhone~ +88-01823914363, +88-01533056183
+\end{minipage}
+&
+\begin{minipage}[t]{0.25\textwidth}
+    \begin{flushright}
+        \includegraphics[width=3.5cm,height=4.5cm,keepaspectratio]{photo.jpg}
+    \end{flushright}
+\end{minipage}
+\end{tabular*}
+\end{table}
+
+%----------------------------------------
+\section*{Career Objective}
+I prefer to work and contribute with a harmonious and dynamic team. I aim to develop my career in a creative sector where creativity, sincerity, skill, and performance are the criteria for recognition and appraisal.
+
+%----------------------------------------
+\section*{Educational Qualifications}
+\begin{tabular}{p{0.35\linewidth} p{0.6\linewidth}}
+\textbf{MBA (Management)} & Government College of Commerce, Chattogram (2020) — CGPA: 3.06/4.00, National University\\
+\textbf{BBA (Management)} & Chattogram Cantonment Public College (2019) — CGPA: 3.35/4.00, National University\\
+\textbf{HSC (Business Studies)} & Kapashgola City Corporation Mohila College, Chattogram (2014) — GPA: 4.10/5.00\\
+\textbf{SSC (Business Studies)} & Anowara Govt. Model High School, Chattogram (2012) — GPA: 4.38/5.00\\
+\end{tabular}
+
+%----------------------------------------
+\section*{Co-Curricular Activities}
+\begin{itemize}[leftmargin=*]
+    \item Exam Invigilator — IDP Education Limited\\
+    Supervised IELTS exams, ensuring test integrity and smooth conduct.
+    \item Active member of the Chattogram Cantonment Public College (CCPC) Business Club for four years.
+    \item Over 10 years of tuition experience while studying.
+    \item Developed teamwork, public speaking, and organizational skills.
+    \item Strong interpersonal, communication, and ability to perform efficiently under pressure and meet deadlines.
+\end{itemize}
+
+%----------------------------------------
+\section*{Key Qualifications and Skills}
+\begin{itemize}[leftmargin=*]
+    \item Self-confident, positive, flexible, and well-organized.
+    \item Efficient under pressure, deadline-oriented, and adaptable.
+    \item Skilled in public speaking, teamwork, and interpersonal communication.
+\end{itemize}
+
+
+%----------------------------------------
+\section*{Language Proficiency}
+\begin{itemize}[leftmargin=*]
+    \item English: Good at speaking, understanding, and writing.
+    \item Bangla: Fluent in speaking, understanding, and writing.
+\end{itemize}
+
+%----------------------------------------
+\section*{Computer Skills}
+\begin{itemize}[leftmargin=*]
+    \item Proficient in MS Office: Word, Excel, PowerPoint, Internet, and Multimedia Presentation.
+    \item Good typing speed.
+\end{itemize}
+
+
+%----------------------------------------
+\section*{Personal Details}
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{@{} p{0.35\linewidth} p{0.6\linewidth} @{}}
+\textbf{Father’s Name:} & Ahmed Noor \\
+\textbf{Mother’s Name:} & Salima Begum \\
+\textbf{Date of Birth:} & 16 August 1994 \\
+\textbf{NID No:} & 5986099603  \\
+\textbf{Nationality:} & Bangladeshi \\
+\textbf{Religion:} & Islam \\
+\textbf{Marital Status:} & Married \\
+\textbf{Blood Group:} & O+ \\
+\textbf{Permanent Address:} & Eakub Member er Bari, Bilpur,Anwara-4376, Chattogram \\
+\textbf{Present Address:} & Chowdhury Mansion, Agrani Bank Lane, Boromia Mosjid, K.B Aman Ali Road,Chawkbazar, Chattogram-4203 \\
+\textbf{Contact Number:} & +88-01823914363, +88-01533056183 \\
+\textbf{Email:} & tmishu71@gmail.com \\
+\end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\end{center}
+
+%----------------------------------------
+\section*{References}
+\textbf{Sharmin Sultana} \\
+Assistant Professor (Department of Management)\\
+Chattogram Cantonment Public College, Chattogram Cantonment, Bayzid\\
+Phone: 01728698855
+
+%----------------------------------------
+\section*{Declaration}
+I, the undersigned, confirm that to the best of my knowledge, this resume correctly describes myself, my qualifications, and my experience.
+
+\vspace{0.6cm}
+\noindent\rule{6cm}{0.4pt}\\
+\textbf{Signature}
+
+\end{document}

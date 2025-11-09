@@ -1,0 +1,4 @@
+Player --- 750 
+WC Jersey --- 750 +_ 20
+Retro ---- 900
+Fan Version --- 600

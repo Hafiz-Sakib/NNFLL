@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\usepackage{charter}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{ragged2e}
+
+% Set margins
+\geometry{a4paper, left=1in, right=1in, top=1in, bottom=1in}
+
+% Line spacing
+\onehalfspacing
+\setlength{\parindent}{0.5in}
+\setlength{\parskip}{0.5em}
+
+% No header/footer
+\pagestyle{empty}
+
+% Custom column type for tabular
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+% Date - Right aligned with spacing
+\begin{flushright}
+    \vspace*{0.5cm}
+    Date: 19/01/2026
+\end{flushright}
+
+% Recipient - Left aligned with proper spacing
+\vspace{0.5cm}
+\begin{flushleft}
+To,\\
+The Vice-Chancellor Sir,\\
+Premier University, Chattogram,\\
+Through: The Chairman of Department of CSE
+\end{flushleft}
+
+% Subject - Left aligned with spacing
+\vspace{0.3cm}
+\begin{flushleft}
+\textbf{Subject: Request for Semester Fee Concession}
+\end{flushleft}
+
+% Salutation - Left aligned
+\vspace{0.3cm}
+\begin{flushleft}
+Dear Sir,
+\end{flushleft}
+
+% Body - Justified text for better readability
+\justifying
+With due respect and honor, I'm writing this application to make request for semester fee concession for my son Mohammad Hafizur Rahman Sakib. I have 5 more children and they all are studying currently. I am the only earning member of my family. So it's becoming hard for me to manage their expenses. For the among reason I'm requesting you half of semester fee concession for my son.
+
+I therefore pray and hope that you would be kind enough to consider my financial status and approve my request. I'll be forever grateful to you for your generosity.
+
+% Closing
+\vspace{0.5cm}
+Sincerely,\\
+\vspace{0.5cm}
+\begin{flushleft}
+Ahmed Noor
+\end{flushleft}
+
+% Personal Details - Two-column table with improved spacing
+\vspace{0.5cm}
+\begin{tabular}{@{}L{3.5in}L{3.5in}@{}}
+    \textbf{Relation:} Father & \textbf{Program:} B.Sc. in CSE \\
+    \textbf{House:} Yakub Member er Bari & \textbf{Name:} Mohammad Hafizur Rahman Sakib \\
+    \textbf{Union:} 7 no Anwara Sadar & \textbf{ID:} 0222210005101118 \\
+    \textbf{Upazila:} Anwara & \textbf{Semester:} 8th \\
+    \textbf{District:} Chattogram & \textbf{Section:} C \\
+    \textbf{Father's Mobile No:} 01733627444 & \textbf{Batch:} 41 \\
+    \textbf{Mother's Mobile No:} 01817245492 & \textbf{Student's Mobile No:} 01516195904 \\
+\end{tabular}
+
+\end{document}
